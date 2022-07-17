@@ -1,0 +1,164 @@
+div.SideDrawer {
+  width: 256px;
+  background-color: var(--White);
+  border-right: 1px solid var(--Border-Gray);
+  margin-left: -256px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+header.SideDrawer-Head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  height: 3.5625rem;
+  padding-left: 1.5rem;
+  border-bottom: 1px solid var(--Border-Gray);
+}
+
+div.Xyshma-Logo-Brand-Wrapper {
+  display: flex;
+  align-items: center;
+}
+
+img.SideDrawer-Xyshma-Logo {
+  width: 1.875rem;
+}
+
+span.SideDrawer-Xyshma-Brand {
+  font-size: 1.35rem;
+  margin-left: 0.625rem;
+  font-family: "Product Sans";
+  font-weight: 500;
+  color: var(--Black-800);
+}
+
+div.SideDrawer-Close {
+  cursor: pointer;
+  width: 1.875rem;
+}
+
+div.SideDrawer-Close span {
+  height: 1.875rem;
+  width: 0.125rem;
+  background-color: var(--Black);
+  display: block;
+  transform: rotate(-45deg);
+}
+
+div.SideDrawer-Close span::before {
+  content: "";
+  position: absolute;
+  height: 1.875rem;
+  width: 0.125rem;
+  background-color: var(--Black);
+  display: block;
+  transform: rotate(90deg);
+}
+
+ul.SideDrawer-Item-Container {
+  padding: 0.5rem 0 0.5rem 0;
+  list-style-type: none;
+}
+
+li.SideDrawer-Item {
+  display: block;
+  margin-bottom: 10px;
+}
+
+a.SideDrawer-Link {
+  text-decoration: none;
+  color: var(--Black-800);
+  padding: 0.625rem 0 0.625rem 1.5rem;
+  display: block;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  transition: 0.3s;
+}
+
+a.SideDrawer-Link:hover {
+  background-color: var(--Blue-100);
+}
+
+i.SideDrawer-Icon {
+  margin-right: 1.5rem;
+  color: var(--Black);
+}
+
+span.SideDrawer-Item-Label {
+  color: var(--Black);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+div.SideDrawer-Overlay {
+  background-color: var(--Overlay-Light);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9998;
+}
+
+div.Show-Overlay {
+  background-color: var(--Overlay-Light);
+  animation: ShowOverlay 0.3s ease-out;
+}
+
+@keyframes ShowOverlay {
+  0% {
+    background-color: var(--Black-Zero-Opacity);
+  }
+  100% {
+    background-color: var(--Overlay-Light);
+  }
+}
+
+div.Hide-Overlay {
+  background-color: var(--Black-Zero-Opacity);
+  animation: HideOverlay 0.3s ease-out;
+}
+
+@keyframes HideOverlay {
+  0% {
+    background-color: var(--Overlay-Light);
+  }
+  100% {
+    background-color: var(--Black-Zero-Opacity);
+  }
+}
+
+div.Show-SideDrawer {
+  margin-left: 0;
+  animation: ShowSideDrawer 0.3s ease-in;
+}
+
+@keyframes ShowSideDrawer {
+  0% {
+    margin-left: -256px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+
+div.Hide-SideDrawer {
+  margin-left: -256px;
+  animation: HideSideDrawer 0.3s ease-out;
+}
+
+@keyframes HideSideDrawer {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: -256px;
+  }
+}

@@ -1,0 +1,57 @@
+header.Xyshma-Header {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("./../images/Home-Cover-6.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 100px;
+  overflow: hidden !important;
+  padding: var(--NavBar-Padding-TB) var(--NavBar-Padding-LR);
+}
+
+/* header.Xyshma-Header::after {
+  content: "";
+  position: fixed;
+  top: 56.69;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--Black-300);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+} */
+
+div.Xyshma-Header-Description {
+  z-index: 9997;
+  text-align: center;
+}
+
+div.Xyshma-Header-Description > p.Mini-Header,
+h1.Welcome-Title {
+  margin: 0;
+  padding: 0;
+  color: var(--White);
+}
+
+div.Xyshma-Header-Description > p.Mini-Header {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Open Sans" !important;
+}
+
+div.Xyshma-Header-Description > h1 {
+  font-size: 3.5rem;
+  color: var(--White);
+  font-family: "Product Sans Black" !important;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+div.Xyshma-Header-Description > a {
+  margin-bottom: 15px;
+  width: auto;
+}

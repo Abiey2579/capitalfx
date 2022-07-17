@@ -1,0 +1,82 @@
+div.Xyshma-SignIn {
+  min-width: 300px;
+  max-width: 400px;
+  margin: 5% auto 5% auto;
+}
+
+header.Xyshma-SignIn-Header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3.125rem;
+}
+
+img.Xyshma-Logo {
+  width: 2.5rem;
+}
+
+span.Xyshma-Brand {
+  font-size: 1.5625rem;
+  font-family: "Product Sans";
+  color: var(--Black);
+  margin-left: 0.625rem;
+}
+
+div.Xyshma-SignIn-Auth {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+div.AuthLink {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px solid var(--Light-Gray);
+  padding: 0.875rem 1.625rem;
+  margin-bottom: 0.625rem;
+  border-radius: 0.35rem;
+}
+
+span.AuthIcon {
+  margin-right: 1.25rem;
+}
+
+span.AuthIcon::before {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #e8e8e9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--Black);
+  font-family: "fontisto";
+}
+
+.GoogleIcon::before {
+  content: "\e91d";
+}
+
+.FacebookIcon::before {
+  content: "\e918";
+}
+
+.TwitterIcon::before {
+  content: "\e942";
+}
+
+.GitHubIcon::before {
+  content: "\e91c";
+}
+
+.LinkedInIcon::before {
+  content: "\e926";
+}
+
+a.AuthName {
+  color: var(--Black);
+  font-family: "Product Sans";
+  font-weight: bold;
+  text-decoration: none;
+}

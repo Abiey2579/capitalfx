@@ -1,0 +1,91 @@
+nav.NavBar {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9998;
+  background-color: var(--White);
+  border-bottom: 1px solid var(--Dark-Gray-100);
+}
+
+div.NavBar-Container {
+  padding: var(--NavBar-Padding-TB) var(--NavBar-Padding-LR);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.NavBar-Brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+button.SideDrawer-Toggle {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  margin-right: 1.875rem;
+  padding: 0;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
+
+button.SideDrawer-Toggle > span {
+  width: 1.875rem;
+  height: 0.1875rem;
+  background-color: var(--Black);
+  display: block;
+  margin-bottom: 0.3125rem;
+}
+
+img.Xyshma-Logo {
+  width: 2rem;
+}
+
+span.Xyshma-Brand {
+  font-size: 1.4625rem;
+  font-family: "Product Sans Medium" !important;
+  font-weight: 500;
+  color: var(--Black-800);
+  margin-left: 0.625rem;
+}
+
+ul.NavBar-Navigation {
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+li.NavBar-Item {
+  float: left;
+  margin-left: 2.5125rem;
+}
+
+a.NavBar-Link {
+  color: var(--Black);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+@media (max-width: 767px) {
+  div.NavBar-Collapse {
+    display: none;
+  }
+
+  button.SideDrawer-Toggle {
+    display: flex !important;
+  }
+
+  div.NavBar-Container {
+    padding: var(--NavBar-Padding-TB) calc(var(--NavBar-Padding-LR) / 2);
+  }
+}

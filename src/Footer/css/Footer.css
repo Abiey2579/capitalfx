@@ -1,0 +1,67 @@
+footer.Xyshma-Footer {
+  width: 100vw;
+  height: 10vh;
+  background-color: var(--Dark-Gray-100);
+}
+
+footer.Xyshma-Footer > div.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+div.Social-Icon-Container,
+div.Copyright-Container {
+  display: flex;
+  align-items: center;
+  height: 10vh;
+}
+
+div.Social-Icon-Container {
+  justify-content: flex-end;
+}
+
+div.Copyright-Container > p {
+  font-family: "Roboto";
+  margin-bottom: 0;
+  color: var(--Black);
+}
+
+a.Social-Icon {
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+a.Social-Icon::before {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid #e8e8e9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--Black);
+  font-family: "fontisto";
+}
+
+a.Social-Icon:hover::before {
+  background-color: var(--Blue-700);
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  color: var(--White);
+}
+
+.Whatsapp-Icon::before {
+  content: "\e945";
+}
+
+.Google-Icon::before {
+  content: "\e91e";
+}
+
+.GitHub-Icon::before {
+  content: "\e91c";
+}
