@@ -1,0 +1,33 @@
+div.auth-cover-background {
+  background-color: #dff6ff;
+}
+
+div.row {
+  height: 100vh;
+  margin: auto 0 !important;
+}
+
+img.auth-illustration {
+  width: 450px;
+  margin-bottom: 2rem;
+}
+
+div.capitalfx-logo {
+  margin-bottom: 1rem;
+}
+
+div.capitalfx-logo > span {
+  font-size: 3rem;
+}
+
+div.capitalfx-logo > span:first-child {
+  font-family: "Open Sans SemiBold";
+}
+
+div.capitalfx-logo > span:last-child > span {
+  font-family: "Roboto Black";
+}
+
+p.auth-side-description {
+  font-family: "Open Sans";
+}
