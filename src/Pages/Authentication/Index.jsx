@@ -13,8 +13,8 @@ class Authentication extends Component {
       <div className="row">
         <SideContainer />
         <Login />
-        <Register />
-        <ForgotPassword />
+        {/* <Register /> */}
+        {/* <ForgotPassword /> */}
       </div>
     );
   }

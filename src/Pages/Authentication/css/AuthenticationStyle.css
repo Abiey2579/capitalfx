@@ -1,3 +1,45 @@
+/* 
+*******************************************************************
+  DEFAULT STYLINGS
+*******************************************************************
+*/
+:root {
+  --Dark-Blue: #06283d;
+  --Blue: #1363df;
+  --Sky-Blue: #47b5ff;
+  --Light-Blue: #dff6ff;
+}
+
+.bg-dark-blue {
+  background-color: var(--Dark-Blue) !important;
+}
+.bg-blue {
+  background-color: var(--Blue) !important;
+}
+.bg-sky-blue {
+  background-color: var(--Sky-Blue) !important;
+}
+.bg-light-blue {
+  background-color: var(--Light-Blue) !important;
+}
+
+.text-dark-blue {
+  color: var(--Dark-Blue) !important;
+}
+.text-blue {
+  color: var(--Blue) !important;
+}
+.text-sky-blue {
+  color: var(--Sky-Blue) !important;
+}
+.text-light-blue {
+  color: var(--Light-Blue) !important;
+}
+/* 
+*******************************************************************
+  AUTHENTICATION STYLINGS
+*******************************************************************
+*/
 div.auth-cover-background {
   background-color: #dff6ff;
 }
@@ -8,7 +50,7 @@ div.row {
 }
 
 img.auth-illustration {
-  width: 450px;
+  width: 350px;
   margin-bottom: 2rem;
 }
 
@@ -17,7 +59,7 @@ div.capitalfx-logo {
 }
 
 div.capitalfx-logo > span {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 div.capitalfx-logo > span:first-child {

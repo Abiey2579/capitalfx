@@ -1,10 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Xyshma from "./Router";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.min.js";
+
+import Authentication from "./Router";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Xyshma />
+    <Authentication />
   </React.StrictMode>,
   document.getElementById("root")
 );
