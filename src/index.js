@@ -1,8 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.min.js";
 
+// AUTHENTICATION STYLINGS
+import "./Pages/Authentication/css/AuthenticationStyle.css";
+
+// AUTHENTICATION PARENT COMPONENT
 import Authentication from "./Router";
 
 ReactDOM.render(

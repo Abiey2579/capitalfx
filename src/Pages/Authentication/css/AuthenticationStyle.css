@@ -41,7 +41,7 @@
 *******************************************************************
 */
 div.auth-cover-background {
-  background-color: #dff6ff;
+  background-color: var(--Light-Blue);
 }
 
 div.row {
