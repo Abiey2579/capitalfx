@@ -7,24 +7,23 @@ class Login extends Component {
   state = {
     UserEmail: "",
     UserPassword: "",
-    LoginStatus: "",
+    LoginStatus: {},
   };
 
   HandleLoginRequest = (e) => {
     e.preventDefault();
+    const { UserEmail, UserPassword } = this.state;
     const URL_LOGIN = "http://localhost/php-auth-api/login.php";
     axios({
       method: "post",
       url: URL_LOGIN,
       data: {
-        email: this.state.UserEmail,
-        password: this.state.UserPassword,
+        email: UserEmail,
+        password: UserPassword,
       },
     })
       .then((response) => {
-        this.setState({ LoginStatus: response.data.success });
-        console.log(response.data);
-        this.SuccessMessage();
+        this.setState({ LoginStatus: response.data });
       })
       .catch((error) => console.log(error));
   };
@@ -34,17 +33,21 @@ class Login extends Component {
     return this.setState({ [InputName]: Input.target.value });
   }
 
-  SuccessMessage() {
-    return this.state.LoginStatus == "1" ? (
+  ResponseMessage() {
+    const { LoginStatus } = this.state;
+    return LoginStatus.success === 1 ? (
       <div class="alert alert-success mt-3" role="alert">
-        You have successfully logged in
+        {LoginStatus.message}
       </div>
     ) : (
-      ""
+      <div class="alert alert-danger mt-3" role="alert">
+        {LoginStatus.message}
+      </div>
     );
   }
 
   render() {
+    const { LoginStatus } = this.state;
     return (
       <div className="row">
         <SideContainer />
@@ -54,10 +57,7 @@ class Login extends Component {
               <div className="text-center">
                 <h1 className="h3 text-dark-blue mb-4">Welcome to Back!</h1>
               </div>
-              <form
-                id="CapitalFX-Login-Form"
-                onSubmit={this.HandleLoginRequest}
-              >
+              <form onSubmit={this.HandleLoginRequest}>
                 <div className="form-group mb-3">
                   <input
                     type="email"
@@ -79,7 +79,8 @@ class Login extends Component {
                 <button className="btn bg-dark-blue w-100 text-white">
                   Log In
                 </button>
-                {this.SuccessMessage()}
+                {LoginStatus.hasOwnProperty("success") &&
+                  this.ResponseMessage()}
               </form>
               <hr />
               <div className="text-center">

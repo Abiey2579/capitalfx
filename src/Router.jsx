@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ForgotPassword from "./Pages/Authentication/ForgotPassword";
 import Login from "./Pages/Authentication/Login";
 import Register from "./Pages/Authentication/Register";
+import SignInSide from "./Pages/Authentication/SignIn";
 
 const CapitalFX = () => {
   return (
